@@ -27,6 +27,7 @@ jobs:
 
       - name: build doc
         run: |
+          source .venv/bin/activate
           alias python3=python
           sh ./scripts/build.sh
       - name: create .nojekyll
