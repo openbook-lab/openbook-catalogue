@@ -21,7 +21,9 @@ jobs:
           python-version: "3.10.9"
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
+          python -m venv .venv
+          source .venv/bin/activate
+          python -m pip install sphinx
 
       - name: build doc
         run: |
