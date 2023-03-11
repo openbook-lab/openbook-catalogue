@@ -1,16 +1,40 @@
 # Openbook Catalogue
 
-## 贡献指南
+## 环境搭建
+
+第一次运行，请创建虚拟环境。
 
 ```shell
 python -m venv .venv
+```
+
+然后激活：
+
+```shell
 source .venv/bin/activate
 python -m pip install sphinx
+```
 
+检查安装成功：
+
+```
 sphinx-build --version
 ```
 
+之后每次启动终端，都请先激活环境：
+
+```
+source .venv/bin/activate
+```
+
+## 生成文档
+
 ```shell
-sphinx-quickstart docs
-sphinx-build -b html docs/source/ docs/build/html
+sh ./scripts/build.sh
+```
+
+## 本地预览
+
+```shell
+sh ./scripts/preview.sh
 ```
