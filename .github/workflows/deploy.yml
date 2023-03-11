@@ -21,11 +21,11 @@ jobs:
           python-version: "3.10.9"
       - name: Install dependencies
         run: |
-          python -m pip install pip --upgrade
           pip install -r requirements.txt
 
       - name: build doc
         run: |
+          alias python3=python
           sh ./scripts/build.sh
       - name: create .nojekyll
         run: touch ./docs/build/html/.nojekyll
