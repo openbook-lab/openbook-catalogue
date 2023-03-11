@@ -42,6 +42,7 @@ jobs:
         run: touch ./docs/build/html/.nojekyll
 
   deploy:
+    needs: build-doc
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
