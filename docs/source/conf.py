@@ -27,3 +27,5 @@ html_baseurl=''
 html_theme = 'furo'
 html_static_path = ['_static']
 html_logo = "https://avatars.githubusercontent.com/u/127606413"
+
+html_css_files = [ 'css/custom.css' ]
