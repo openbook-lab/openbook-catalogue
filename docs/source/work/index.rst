@@ -2,6 +2,6 @@
     :hidden:
     :maxdepth: 4
 
-    planned_textbooks
-    in_progress_textbooks
+    textbooks_plan
+    textbooks_in_progress
     subject_classifications
