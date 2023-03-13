@@ -12,20 +12,20 @@ python -m venv .venv
 
 ```shell
 source .venv/bin/activate
-python -m pip install sphinx
+python -m pip install sphinx furo
 ```
 
 > 如果是 Windows 操作系统，请使用 `.\.venv\Scripts\activate.bat`。下同。
 
 检查安装成功：
 
-```
+```shell
 sphinx-build --version
 ```
 
 之后每次启动终端，都请先激活环境：
 
-```
+```shell
 source .venv/bin/activate
 ```
 
