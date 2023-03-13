@@ -15,6 +15,8 @@ source .venv/bin/activate
 python -m pip install sphinx
 ```
 
+> 如果是 Windows 操作系统，请使用 `.\.venv\Scripts\activate.bat`。下同。
+
 检查安装成功：
 
 ```
